@@ -1,2 +1,3 @@
 # Js-Projects
-Tic Tac Toe Games Demo Link: https://tictactoegames-js.netlify.app/ 
+Tic Tac Toe Games Demo: https://tictactoegames-js.netlify.app/ 
+Water Tracker Demo: https://water-trackerr.netlify.app/
