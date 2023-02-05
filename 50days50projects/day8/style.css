@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    border: 2px solid rgb(78, 37, 112);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 60px 60px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container a {
+    text-decoration: none;
+    color:  rgb(78, 37, 112);
+    cursor: pointer;
+}
+
+.container a:hover {
+    color: rgb(35, 7, 68);
+    text-decoration:underline;
+    
+}
+
+.container p {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    color: rgb(204, 232, 241);
+    background-color: rgb(74, 94, 180);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 4rem;
+   
+}
+
+.btn:hover {
+    background-color: rgb(70, 86, 158);
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn.active {
+    transform: scale(0.98);
+}
+
+.form-control {
+    margin-bottom: 40px;
+    position: relative;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: rgb(30, 43, 66);
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 15px;
+    min-width: 5px;
+    transition: transform 0.3s ease-in;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
