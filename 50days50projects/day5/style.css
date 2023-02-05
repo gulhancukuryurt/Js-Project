@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.bg {
+   background-image: url("img/flowerbg.jpg");   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:calc(100vh + 60px);
+   width:calc(100vw + 60px);
+   z-index: -1;
+   position: absolute;
+   top:-30px;
+   left:-30px;
+   filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
