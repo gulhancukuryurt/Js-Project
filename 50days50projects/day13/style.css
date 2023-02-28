@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    margin:0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+   color: rgb(102, 160, 162);
+   text-align: center;
+   
+}
+
+textarea {
+    width: 600px;
+    height: 150px;
+    background-color: rgb(223, 218, 211);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+.tag{
+    background-color:chocolate;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color:white;
+    display:inline-block;
+    margin: 0px 5px;
+    
+}
+
+.tag.highlight{
+    background-color: darkblue;
+}
