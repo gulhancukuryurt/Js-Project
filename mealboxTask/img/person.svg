@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" viewBox="0 0 35.924 41.06">
+  <g id="kullanici_ikon" data-name="kullanici ikon" transform="translate(1.5 3.5)">
+    <path id="Shape" d="M32.924,12.02V8.013A8.124,8.124,0,0,0,24.693,0H8.231A8.124,8.124,0,0,0,0,8.013V12.02" transform="translate(0 24.04)" fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <ellipse id="Oval" cx="10.231" cy="10.013" rx="10.231" ry="10.013" stroke-width="3" transform="translate(6.231 -2)" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+  </g>
+</svg>
