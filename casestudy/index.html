@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Proje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="navbar-logo">Logo</a>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="#buy">Buy</a>
+            <a href="#sell">Sell</a>
+            <a href="#invest">Invest</a>
+            <a href="#buying">Buying Guides</a>
+            <a href="#corporate">Corporate</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div class="dropdown">
+        <div class="dropdown-main">
+            <button onclick="toggleDropdown()" class="dropbtn">Home.Path.Path<i class="icon-arrow"></i>
+            </button>
+            <button class="close-btn">Close</button>
+        </div>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#option1">luctus commodo</a>
+            <a href="#option2">morbi a nibh sed</a>
+            <a href="#option3">Elit dictum rhoncus</a>
+            <a href="#option4">cras ut</a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <form>
+            <input type="search" id="searchInput" placeholder="Select Product, e.g. Casual">
+            <button type="submit">Search</button>
+        </form>
+        <div id="autocompleteResults" class="autocomplete-results"></div>
+    </div>
+
+    <div class="grid-container">
+        <main class="grid-item main">
+            <h5>Filters</h5>
+            <div class="items">
+                <div class="item item1" onclick="openModal('Location')"><label>Location</label></div>
+                <div class="item item2" onclick="openModal('Type')"><label>Type</label></div>
+                <div class="item item3" onclick="openModal('Beds')"><label>Beds</label></div>
+                <div class="item item4" onclick="openModal('Storeys')"><label>Storeys</label></div>
+                <div class="item item5" onclick="openModal('Price')"><label>Price</label></div>
+                <div class="item item6" onclick="openModal('Size')"><label>Size</label></div>
+                <div class="item item7" onclick="openModal('Plot Size')"><label>Plot Size</label></div>
+                <div class="item item8" onclick="openModal('Installments')"><label>Installments</label></div>
+                <div class="item item9" onclick="openModal('Tags')"><label>Tags</label></div>
+                <div class="item item10" onclick="openModal('Interior Features')"><label>Interior Features</label></div>
+                <div class="item item11" onclick="openModal('Exterior Features')"><label>Exterior Features</label></div>
+                <div class="item item12" onclick="openModal('Location Features')"><label>Location Features</label></div>
+                <div class="item item13" onclick="openModal('Heating Features')"><label>Heating Features</label></div>
+                <div class="item item14" onclick="openModal('Orientation Features')"><label>Orientation Features</label>
+                </div>
+                <div class="item item15" onclick="openModal('Copletion Year')"><label>Copletion Year</label></div>
+            </div>
+            <div class="item-label">
+                <label>Clear All</label>
+                <label>|</label>
+                <label> <i class="fa-regular fa-map" style="color: #cadffc;"></i>
+                    Map</label>
+            </div>
+            <div class="btns">
+                <button class="menu-btn" onclick="showContent('propertyList', this)">Propert List</button>
+                <button class="menu-btn" onclick="showContent('details', this)">Details</button>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="propertyListContent" class="content">
+        <h5>Showing <span style="color: red;">20 of 19364</span> Properties</h5>
+        <div class="card-grid">
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+            <div class="card">
+                <img src="./img/cardimg.jpg" >
+                <p>Smartly Designed Luxury Seafront Apartments</p>
+            </div>
+
+        </div>
+        <div class="pagination">
+            <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+            <a href="#">21</a>
+            <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+
+    <div id="detailsContent" class="content">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, dolore vero laborum delectus quos facilis
+            nulla praesentium maxime commodi maiores fugiat rem rerum esse consequatur et, eos officia tempore animi!
+            Veritatis rem sit optio, eveniet cumque fugiat laborum sed nulla in enim. Laborum reiciendis, quod vero illo
+            perferendis fugit. Dignissimos.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, dolore vero laborum delectus quos facilis
+            nulla praesentium maxime commodi maiores fugiat rem rerum esse consequatur et, eos officia tempore animi!
+            Veritatis rem sit optio, eveniet cumque fugiat laborum sed nulla in enim. Laborum reiciendis, quod vero illo
+            perferendis fugit. Dignissimos.</p>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <img src="./img/detailsimg.jpg" width="100%">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, dolore vero laborum delectus quos facilis
+            nulla praesentium maxime commodi maiores fugiat rem rerum esse consequatur et, eos officia tempore animi!
+            Veritatis rem sit optio, eveniet cumque fugiat laborum sed nulla in enim. Laborum reiciendis, quod vero illo
+            perferendis fugit. Dignissimos.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, dolore vero laborum delectus quos facilis
+            nulla praesentium maxime commodi maiores fugiat rem rerum esse consequatur et, eos officia tempore animi!
+            Veritatis rem sit optio, eveniet cumque fugiat laborum sed nulla in enim. Laborum reiciendis, quod vero illo
+            perferendis fugit. Dignissimos.</p>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio!</p>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
