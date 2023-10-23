@@ -1,2 +1,2 @@
 
-**[Live Demo] (https://casestudy-project.netlify.app/)**
+[Live Demo] (https://casestudy-project.netlify.app/)
